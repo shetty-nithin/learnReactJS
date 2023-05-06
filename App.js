@@ -1,4 +1,7 @@
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import React from "react";
+import ReactDom from "react-dom/client";
+
+const root = ReactDom .createRoot(document.getElementById("root"));
 
 //Example 1:
 
@@ -62,7 +65,7 @@ const parent = React.createElement(
         "div",
         {id: "child"},
         [
-            React.createElement("h1",{},"Im h1 tag : 1"),
+            React.createElement("h1",{},"Im h1 tag : Nithin Shetty"),
             React.createElement("h1", {}, "Im h1 tag : 2")
         ]
     )

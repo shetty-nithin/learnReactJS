@@ -1,0 +1,26 @@
+=> "parent" is React Element not a tag
+=> react element becomes HTML object which browser understands.
+
+
+Parcel : 
+     - Creates Dev Build
+     - Creates Local Server
+     - Doing HMR (Hot Moudle Replacment) (doing by File Watching algorithm written using C++)
+     - Caching : Faster Builds
+     - Does image optimization
+     - Does minify the project during production
+     - Does bundling
+     - Does compressing
+     - Uses consistent hashing
+     - Does code splitting
+     - Differential bundling to support older browsers
+     - Diagnostic
+     - Error handling
+     - https
+     - Tree Shaking : remove unused code
+     Refer parcel documentation for more information
+
+
+We can add browserlist also in the package.json using "browsersList": []
+
+
