@@ -23,4 +23,53 @@ Parcel :
 
 We can add browserlist also in the package.json using "browsersList": []
 
+js engine does not understand JSX, it understands only ecma script. Hence JSX will be transpiled by the parcel before it reaches the js engine. Again parcel itself doesnot perform this. Parcel gives this to BABEL.
+
+React Components:
+     - Class based componenet : old
+     - Functional based component : latest
+     
+     React Component is the normal js function which returns the react element.
+
+     importing one react component into another component is called "React Composition".
+
+React Element : root.render(heading)  where : heading is the react element.
+React Component : root.render(<Heading/>) where : Heading is the react component. First letter has to be capital.
+
+
+Config Driven UI : UI will change as per the data.
+
+Exporting: 2 types
+     1. Default export
+          - Only 1 export can be present.
+          Syntax : export default "file_name"
+          import => import name from "path_name"
+ 
+     2. Named export
+          - Multiple export can be present.
+          Syntax : export const function_name = () => {}
+          import => import { name } from "path_name"
+
+Hooks : 
+     1. useState - Whenever a state variable updated, react will re-render the component.
+     2. useEffect - with empty dependicy array, this will be called only once after the initial render.
+
+
+Virtual DOM : (object)
+Representation of an actual DOM. Or JS representation of the actual DOM.
+example:
+     - const heading = React.createElement("h1", {}, "hello world");
+       => here heading is the virtual DOM.
+     - <Component/>
+
+     It finds the diff between the old object and new object, then difference will be updated in the actual DOM.
+
+Inside the JSX, we can write any piece of JS code provided its an Expression not a statement.
+Ex : Cannot write => { 
+                         let a = 10;
+                         console.log(a);  => statments
+                     }
+     Can write  =>  {
+                         ((let a = 10), console.log(a)); => Expression
+                    }
 
